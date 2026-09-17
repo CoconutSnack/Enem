@@ -18,7 +18,7 @@
 }
 
 body{
-    background:var(--background);
+    background:#f8fafc !important;
     color:var(--text);
     min-height:100vh;
 }
@@ -55,6 +55,13 @@ header p{
     justify-content:center;
     gap:12px;
     padding:25px;
+}
+.tabs{
+    background:#f8fafc;
+}
+
+main{
+    background:#f8fafc;
 }
 
 .tab-btn{
