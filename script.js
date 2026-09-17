@@ -18,8 +18,8 @@ tabs.forEach(tab => {
         const id = tab.dataset.tab;
 
         document
-        .getElementById(id)
-        .classList.add("active");
+            .getElementById(id)
+            .classList.add("active");
 
     });
 
