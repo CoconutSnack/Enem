@@ -1,89 +1,309 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redação ENEM - Guia Completo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <link rel="stylesheet" href="style.css">
+<title>Guia da Redação ENEM</title>
+
+<link rel="stylesheet" href="style.css">
+
 <script defer src="script.js"></script>
+
 </head>
 <body>
 
-    <button id="menu-btn">☰</button>
+<header>
 
-    <aside class="sidebar">
-        <h2>Redação ENEM</h2>
+    <h1>📚 Guia da Redação ENEM</h1>
 
-        <nav>
-            <a href="#" class="active">Início</a>
-            <a href="pages/estrutura.html">Estrutura</a>
-            <a href="pages/introducao.html">Introdução</a>
-            <a href="pages/desenvolvimento.html">Desenvolvimento</a>
-            <a href="pages/conclusao.html">Conclusão</a>
-            <a href="pages/intervencao.html">Intervenção</a>
-            <a href="pages/repertorio.html">Repertório</a>
-            <a href="pages/competencias.html">Competências</a>
-            <a href="pages/conectivos.html">Conectivos</a>
-            <a href="pages/temas.html">Temas</a>
-            <a href="pages/simulador.html">Simulador</a>
-        </nav>
+    <p>
+        Aprenda cada parte da redação do ENEM de forma simples e organizada.
+    </p>
 
-        <button id="darkModeBtn">🌙 Modo Escuro</button>
-    </aside>
+</header>
 
-    <main class="content">
+<div class="tabs">
 
-        <section class="hero">
-            <h1>Domine a Redação do ENEM</h1>
+    <button class="tab-btn active" data-tab="enem">
+        O que é?
+    </button>
 
-            <p>
-                Aprenda cada parte da redação de forma simples,
-                organizada e focada na nota 1000.
-            </p>
+    <button class="tab-btn" data-tab="introducao">
+        Introdução
+    </button>
 
-            <a href="pages/estrutura.html" class="btn">
-                Começar Agora
-            </a>
-        </section>
+    <button class="tab-btn" data-tab="desenvolvimento">
+        Desenvolvimento
+    </button>
 
-        <section class="progress-section">
+    <button class="tab-btn" data-tab="conclusao">
+        Conclusão
+    </button>
 
-            <h2>Seu Progresso</h2>
+    <button class="tab-btn" data-tab="intervencao">
+        Intervenção
+    </button>
 
-            <div class="progress-bar">
-                <div id="progress"></div>
-            </div>
+    <button class="tab-btn" data-tab="conectivos">
+        Conectivos
+    </button>
 
-            <p id="progressText">0% concluído</p>
+    <button class="tab-btn" data-tab="competencias">
+        Competências
+    </button>
 
-        </section>
+</div>
 
-        <section class="cards">
+<main>
 
-            <div class="card">
-                <h3>Estrutura</h3>
-                <p>Aprenda a estrutura completa da redação.</p>
-            </div>
+<!-- O QUE É -->
 
-            <div class="card">
-                <h3>Introdução</h3>
-                <p>Como construir uma introdução forte.</p>
-            </div>
+<section id="enem" class="tab-content active">
 
-            <div class="card">
-                <h3>Argumentação</h3>
-                <p>Desenvolva argumentos consistentes.</p>
-            </div>
+    <h2>O que é a Redação do ENEM?</h2>
 
-            <div class="card">
-                <h3>Competência 5</h3>
-                <p>Domine a proposta de intervenção.</p>
-            </div>
+    <p>
+        A redação do ENEM é um texto dissertativo-argumentativo sobre um problema da sociedade brasileira.
+        O participante deve apresentar argumentos, utilizar repertório sociocultural e propor uma solução.
+    </p>
 
-        </section>
+    <div class="dica">
+        💡 A redação vale até 1000 pontos e pode fazer grande diferença na nota final.
+    </div>
 
-    </main>
+</section>
+
+<!-- INTRODUÇÃO -->
+
+<section id="introducao" class="tab-content">
+
+    <h2>Introdução</h2>
+
+    <p>
+        A introdução é o primeiro parágrafo da redação. Seu objetivo é apresentar o tema e a tese.
+    </p>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h4>Contextualização</h4>
+            <p>Apresente um filme, livro, dado ou acontecimento relacionado ao tema.</p>
+        </div>
+
+        <div class="card">
+            <h4>Apresentação do Tema</h4>
+            <p>Mostre claramente qual problema será discutido.</p>
+        </div>
+
+        <div class="card">
+            <h4>Tese</h4>
+            <p>Apresente sua opinião ou os argumentos que serão defendidos.</p>
+        </div>
+
+    </div>
+
+    <div class="exemplo">
+        📝 Exemplo: No filme Nimona, Ballister é julgado injustamente por informações falsas.
+        De forma semelhante, a desinformação afeta a sociedade brasileira.
+    </div>
+
+</section>
+
+<!-- DESENVOLVIMENTO -->
+
+<section id="desenvolvimento" class="tab-content">
+
+    <h2>Desenvolvimento</h2>
+
+    <p>
+        O desenvolvimento é a parte onde você apresenta seus argumentos.
+    </p>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h4>Tópico Frasal</h4>
+            <p>Frase inicial apresentando o argumento principal.</p>
+        </div>
+
+        <div class="card">
+            <h4>Explicação</h4>
+            <p>Explique o argumento apresentado.</p>
+        </div>
+
+        <div class="card">
+            <h4>Repertório</h4>
+            <p>Use um filme, livro, autor ou dado para fortalecer sua ideia.</p>
+        </div>
+
+        <div class="card">
+            <h4>Análise</h4>
+            <p>Mostre como o repertório se conecta ao tema.</p>
+        </div>
+
+    </div>
+
+    <div class="dica">
+        💡 Cada parágrafo deve defender apenas um argumento principal.
+    </div>
+
+</section>
+
+<!-- CONCLUSÃO -->
+
+<section id="conclusao" class="tab-content">
+
+    <h2>Conclusão</h2>
+
+    <p>
+        A conclusão retoma a tese e apresenta uma proposta de intervenção.
+    </p>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h4>Retomada</h4>
+            <p>Relembre o problema discutido.</p>
+        </div>
+
+        <div class="card">
+            <h4>Solução</h4>
+            <p>Apresente uma ação para resolver o problema.</p>
+        </div>
+
+        <div class="card">
+            <h4>Fechamento</h4>
+            <p>Mostre o resultado esperado da solução.</p>
+        </div>
+
+    </div>
+
+    <div class="exemplo">
+        📝 Portanto, torna-se necessário combater esse problema por meio de ações educativas.
+    </div>
+
+</section>
+
+<!-- INTERVENÇÃO -->
+
+<section id="intervencao" class="tab-content">
+
+    <h2>Proposta de Intervenção</h2>
+
+    <p>
+        A proposta de intervenção deve respeitar os direitos humanos e conter cinco elementos.
+    </p>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h4>Agente</h4>
+            <p>Quem fará a ação.</p>
+        </div>
+
+        <div class="card">
+            <h4>Ação</h4>
+            <p>O que será feito.</p>
+        </div>
+
+        <div class="card">
+            <h4>Meio</h4>
+            <p>Como a ação será realizada.</p>
+        </div>
+
+        <div class="card">
+            <h4>Finalidade</h4>
+            <p>Qual o objetivo da ação.</p>
+        </div>
+
+        <div class="card">
+            <h4>Detalhamento</h4>
+            <p>Informações extras para tornar a proposta mais completa.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONECTIVOS -->
+
+<section id="conectivos" class="tab-content">
+
+    <h2>Conectivos</h2>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h4>Adição</h4>
+            <p>Além disso, Ademais, Outrossim.</p>
+        </div>
+
+        <div class="card">
+            <h4>Oposição</h4>
+            <p>Entretanto, Contudo, Todavia.</p>
+        </div>
+
+        <div class="card">
+            <h4>Conclusão</h4>
+            <p>Portanto, Assim, Dessa forma.</p>
+        </div>
+
+        <div class="card">
+            <h4>Comparação</h4>
+            <p>Da mesma forma, Assim como.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- COMPETÊNCIAS -->
+
+<section id="competencias" class="tab-content">
+
+    <h2>Competências do ENEM</h2>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h4>Competência 1</h4>
+            <p>Uso correto da norma padrão.</p>
+        </div>
+
+        <div class="card">
+            <h4>Competência 2</h4>
+            <p>Compreensão da proposta.</p>
+        </div>
+
+        <div class="card">
+            <h4>Competência 3</h4>
+            <p>Organização dos argumentos.</p>
+        </div>
+
+        <div class="card">
+            <h4>Competência 4</h4>
+            <p>Coesão textual.</p>
+        </div>
+
+        <div class="card">
+            <h4>Competência 5</h4>
+            <p>Proposta de intervenção.</p>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+    <p>
+        Projeto educativo • Guia da Redação ENEM
+    </p>
+
+</footer>
 
 </body>
 </html>
